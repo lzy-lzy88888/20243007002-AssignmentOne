@@ -1,5 +1,6 @@
 package com.example.assignmentone;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -25,16 +26,26 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void categoryClicked(View view){
+        Intent intent = new Intent(this, DetailActivity.class);
+        int index;
         int id = view.getId();
         if(id == R.id.btn_facilities){
             Toast.makeText(this, "Facilities clicked", Toast.LENGTH_SHORT).show();
+            index = 0;
         }else if(id == R.id.btn_events){
             Toast.makeText(this, "Events clicked", Toast.LENGTH_SHORT).show();
+            index = 1;
         }else if(id == R.id.btn_clubs){
             Toast.makeText(this, "Clubs clicked", Toast.LENGTH_SHORT).show();
-        }else if(id == R.id.btn_support){
+            index =2;
+        }else {
             Toast.makeText(this, "Support clicked", Toast.LENGTH_SHORT).show();
+            index =3;
         }
+        //把唯一索引传给DetailActivity
+        intent.putExtra("SELECTED_INDEX", index);
+        startActivity(intent);
     }
+
 
 }
