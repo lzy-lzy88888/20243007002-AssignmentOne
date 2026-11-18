@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部背景图片+大标题-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_main_banner"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to CampusLife‑ Your Pocket Guide to University of Waikato"
+            android:textSize="40sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <!--2×2按钮网格 竖屏Portrait-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4">
+
+        <ImageButton
+            android:id="@+id/btn_facilities"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/img_btn_facilities"
+            android:background="@drawable/btn_selector"/>
+
+        <ImageButton
+            android:id="@+id/btn_events"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/img_btn_events"
+            android:background="@drawable/btn_selector"/>
+
+        <ImageButton
+            android:id="@+id/btn_clubs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/img_btn_clubs"
+            android:background="@drawable/btn_selector"/>
+
+        <ImageButton
+            android:id="@+id/btn_support"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/img_btn_support"
+            android:background="@drawable/btn_selector"/>
+    </GridLayout>
+</LinearLayout>
