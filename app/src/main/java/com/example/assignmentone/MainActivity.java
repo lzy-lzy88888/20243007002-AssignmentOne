@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.widget.Toast;
+import android.view.View;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,4 +24,17 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+    public void categoryClicked(View view){
+        int id = view.getId();
+        if(id == R.id.btn_facilities){
+            Toast.makeText(this, "Facilities clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.btn_events){
+            Toast.makeText(this, "Events clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.btn_clubs){
+            Toast.makeText(this, "Clubs clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.btn_support){
+            Toast.makeText(this, "Support clicked", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }

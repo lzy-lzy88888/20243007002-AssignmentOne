@@ -41,7 +41,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:src="@drawable/img_btn_facilities"
-            android:background="@drawable/btn_selector"/>
+            android:background="@drawable/btn_selector"
+            android:onClick="categoryClicked"/>
 
         <ImageButton
             android:id="@+id/btn_events"
@@ -50,7 +51,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:src="@drawable/img_btn_events"
-            android:background="@drawable/btn_selector"/>
+            android:background="@drawable/btn_selector"
+            android:onClick="categoryClicked"/>
 
         <ImageButton
             android:id="@+id/btn_clubs"
@@ -59,7 +61,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:src="@drawable/img_btn_clubs"
-            android:background="@drawable/btn_selector"/>
+            android:background="@drawable/btn_selector"
+            android:onClick="categoryClicked"/>
 
         <ImageButton
             android:id="@+id/btn_support"
@@ -68,6 +71,7 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:src="@drawable/img_btn_support"
-            android:background="@drawable/btn_selector"/>
+            android:background="@drawable/btn_selector"
+            android:onClick="categoryClicked"/>
     </GridLayout>
 </LinearLayout>
